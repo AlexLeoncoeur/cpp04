@@ -45,10 +45,8 @@ void	Animal::setType(std::string type)
 	this->_type = type;
 }
 
-void		Animal::makeSound()
+void		Animal::makeSound() const
 {
-	if (!this->_type.empty())
-		std::cout	<< CYAN << "I am a " << this->_type << RESET << std::endl;
-	else
-		std::cout	<< CYAN << "What am I? " << RESET << std::endl;
+	std::cout	<< CYAN << "**GenericAnimalSound** " << RESET << std::endl;
+	return;
 }

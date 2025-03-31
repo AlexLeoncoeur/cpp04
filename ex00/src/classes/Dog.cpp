@@ -1,6 +1,6 @@
 #include "../../include/Dog.hpp"
 
-Dog::Dog() : Animal::Animal()
+Dog::Dog() : Animal()
 {
 	this->_type = "Dog";
 	std::cout	<< YELLOW << "Dog default constructor called" << RESET << std::endl;
@@ -27,4 +27,10 @@ Dog	&Dog::operator=(const Dog &rhs)
 		this->_type = rhs._type;
 	}
 	return (*this);
+}
+
+void	Dog::makeSound() const
+{
+	std::cout	<< CYAN << "**Wau wau** " << RESET << std::endl;
+	return;
 }

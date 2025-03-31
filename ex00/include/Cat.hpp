@@ -19,4 +19,6 @@ public:
 
 	Cat	&operator=(const Cat &rhs);
 
+	void	makeSound() const;
+
 };
