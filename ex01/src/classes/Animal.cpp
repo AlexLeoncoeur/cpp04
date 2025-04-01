@@ -1,6 +1,6 @@
 #include "../../include/Animal.hpp"
 
-Animal::Animal()
+Animal::Animal() : _type("GenericAnimal")
 {
 	std::cout	<< BLUE << "Animal default constructor called" << RESET << std::endl;
 	return ;
