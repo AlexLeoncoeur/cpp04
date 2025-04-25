@@ -12,16 +12,19 @@ int	main(void)
 	const Animal		*dina = new Dog();
 	const WrongAnimal	*fakePipo = new WrongAnimal();
 	const WrongAnimal	*fakeSilvestre = new WrongCat();
+	const Animal		animal;
 
 	pipo->makeSound();
 	silvestre->makeSound();
 	dina->makeSound();
 	fakePipo->makeSound();
 	fakeSilvestre->makeSound();
+	animal.makeSound();
 
 	std::cout	<< RED << silvestre->getType() << RESET << std::endl;
 	std::cout	<< RED << dina->getType() << RESET << std::endl;
 	std::cout	<< RED << fakeSilvestre->getType() << RESET << std::endl;
+	std::cout	<< RED << animal.getType() << RESET << std::endl;
 
 	delete	pipo;
 	delete	silvestre;

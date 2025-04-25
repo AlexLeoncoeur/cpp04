@@ -51,3 +51,14 @@ void	Dog::makeSound() const
 	std::cout	<< CYAN << "**Wau wau** " << RESET << std::endl;
 	return;
 }
+
+void	Dog::setIdea(int index, std::string idea) const
+{
+	this->_brain->setIdea(index, idea);
+	return ;
+}
+
+std::string	Dog::getIdea(int index) const
+{
+	return (this->_brain->getIdea(index));
+}

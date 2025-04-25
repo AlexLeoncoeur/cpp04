@@ -21,5 +21,7 @@ public:
 	Dog	&operator=(const Dog &rhs);
 
 	void	makeSound() const;
-
+	void		setIdea(int index, std::string idea) const;
+	std::string	getIdea(int index) const;
+	
 };

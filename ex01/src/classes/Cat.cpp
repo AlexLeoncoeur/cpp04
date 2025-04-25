@@ -51,3 +51,14 @@ void	Cat::makeSound() const
 	std::cout	<< CYAN << "**Miau 7v7r** " << RESET << std::endl;
 	return;
 }
+
+void	Cat::setIdea(int index, std::string idea) const
+{
+	this->_brain->setIdea(index, idea);
+	return ;
+}
+
+std::string	Cat::getIdea(int index) const
+{
+	return (this->_brain->getIdea(index));
+}

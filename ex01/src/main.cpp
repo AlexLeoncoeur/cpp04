@@ -8,6 +8,13 @@
 int	main(void)
 {
 	Animal	*animals[10];
+	Cat		gato1;
+	Cat		gato2;
+
+	gato1.setIdea(0, "Hola");
+	gato2 = gato1;
+	gato2.setIdea(0, "Adios");
+	std::cout << gato1.getIdea(0) << std::endl;
 	for (int i = 0; i < 10; i++)
 	{
 		if (i < 5)
