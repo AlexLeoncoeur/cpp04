@@ -7,6 +7,14 @@
 
 int	main(void)
 {
+	{
+		Dog	basic;
+		{
+			Dog tmp = basic;
+			tmp.setIdea(0, "idea");
+		}
+		std::cout << basic.getIdea(0) << std::endl;
+	}
 	Animal	*animals[10];
 	Cat		gato1;
 	Cat		gato2;
