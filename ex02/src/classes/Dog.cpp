@@ -11,7 +11,9 @@ Dog::Dog() : AAnimal()
 Dog::Dog(const Dog &tocpy)
 {
 	std::cout	<< YELLOW << "Dog cpy constructor called" << RESET << std::endl;
-	*this = tocpy;
+	this->_brain = new Brain;
+	if (this != &tocpy)
+		*this = tocpy;
 	return ;
 }
 

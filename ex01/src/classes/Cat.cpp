@@ -11,7 +11,9 @@ Cat::Cat() : Animal()
 Cat::Cat(const Cat &tocpy)
 {
 	std::cout	<< GREEN << "Cat cpy constructor called" << RESET << std::endl;
-	*this = tocpy;
+	this->_brain = new Brain;
+	if (this != &tocpy)
+		*this = tocpy;
 	return ;
 }
 
